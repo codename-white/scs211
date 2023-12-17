@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  </head>
+
+  <body>
+    <div class="contanner">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- aler -->
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>ประกาศ!!!</strong>ร้านเราจะหยุดชั่วคราววันที่31ธ.ค.-7 ม.ค. สวัสดีปีใหม่
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <!-- breadcrumb -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">หน้าหลัก</a></li>
+          <li class="breadcrumb-item"><a href="#">หมวดหมู่ของสินค้า</a></li>
+          <li class="breadcrumb-item active" aria-current="page">ชื่อสินค้า</li>
+        </ol>
+      </nav>
+
+      <div class="row">
+        <div class="col-lg-6">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://img2.pic.in.th/pic/1865be83-9374-4748-98a0-0323f814b2d2.jpeg" class="d-block w-100" alt="1865be83-9374-4748-98a0-0323f814b2d2.jpeg">
+          </div>
+          <div class="carousel-item">
+            <img src="https://img2.pic.in.th/pic/a3146bea-6b28-4b2e-aca5-f1e9e7917b55.jpeg" class="d-block w-100" alt="a3146bea-6b28-4b2e-aca5-f1e9e7917b55.jpeg">
+          </div>
+          <div class="carousel-item">
+            <img src="https://img2.pic.in.th/pic/d0d300f5-30f5-4792-9375-f014e1ba199f.jpeg" class="d-block w-100" alt="d0d300f5-30f5-4792-9375-f014e1ba199f.jpeg">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+       </div>
+
+    <div class="col-lg-6">
+      <div class="row-mb-12">
+        <h3>กระต่าย<span class="badge bg-danger">New</span></h3>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-balloon-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386Z"/>
+          </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-balloon-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386Z"/>
+          </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-balloon-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386Z"/>
+          </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-balloon-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386Z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-balloon-heart" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063.045.041.089.084.132.129.043-.045.087-.088.132-.129 3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3.177 3.177 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398Z"/>
+          </svg> &nbsp;4/5
+        </div>
+        <div class="col-lg-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+            <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
+          </svg> &nbsp;
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+          </svg>
+        </div>
+      </div>
+
+      <br>
+      <div class="row">
+        <div class="col-lg-8">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">หมวดหมู่สินค้า</a></li>
+          </ol>
+        </nav>
+        </div>
+        <div class="col-lg-4">
+          <h5>ฟรีค่าจัดส่ง</h5>
+        </div>
+      </div>
+      <br>
+      
+      <div class="row">
+        <div class="col-lg-8">
+          <h3>2,999฿</h3>
+        </div>
+        <div class="col-lg-4">
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  ที่อยู่ร้านค้า
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Rabbit</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        บ้านเลขที่599/509 ถนนกำแพงเพชร2 โทร 081-6949417 โครงการจตุจักรพล่าซ่า แขวงลาดยาว เขตจตุจักร กรุงเทพมหานคร 10900
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-lg-2">
+        <p><strong>จำนวน</strong></p>
+        </div>
+        <div class="col-4">
+        <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary" type="button" onclick="increaseQuantity()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                </svg>
+            </button>
+    
+            <input type="text" value="1" id="quantityInput" class="form-control text-center" placeholder="" aria-label="Example text with two button addons">
+    
+            <button class="btn btn-outline-secondary" type="button" onclick="decreaseQuantity()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"/>
+                </svg>
+            </button>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        function increaseQuantity() {
+            var input = document.getElementById('quantityInput');
+            input.value = parseInt(input.value, 10) + 1;
+        }
+    
+        function decreaseQuantity() {
+            var input = document.getElementById('quantityInput');
+            if (parseInt(input.value, 10) > 0) {
+                input.value = parseInt(input.value, 10) - 1;
+            }
+        }
+    </script>
+
+    <div class="row mt-4">
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-success">
+                เพิ่มไปยังรถเข็น</button>&nbsp;&nbsp;
+            <button type="submit" class="btn btn-primary">
+                สั่งซื้อทันที</button>
+        </div>
+    </div>
+
+    </div>
+     
+    
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              รายละเอียดสินค้า
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              แคลิฟอร์เนียน (Californian) เป็นพันธุ์ขนาดใหญ่ที่มักจะเห็นได้บ่อยในการแสดงโชว์ต่าง ๆ มีจุดเด่นคือ ตัวจะเป็นสีขาว มาพร้อมแต้มสีดำ 4 จุด คือ หู จมูก หาง และเท้าที่เป็นสีดำหรือสีอื่น ๆ จัดว่าเป็นอีกหนึ่งสายพันธุ์กระต่ายที่เชื่องและเหมาะนำมาเป็นสัตว์เลี้ยงไม่น้อยเลยทีเดียว
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              คุณสมบัติสิค้า
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              กระต่ายสายพันธุ์นี้มีนิสัย เชื่อง เรียบร้อย เข้ากันคนง่าย ฝึกได้ค่ะ ขี้อ้อน น่ารักค่ะ
+                สวย สะอาด สุขภาพดี พร้อมดูแลหลังการขายค่ะ
+                ใส่ใจทั้งน้องกระต่ายและคุณลูกค้าทุกท่านค่ะ
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              ตารางค่าส่งสินค้า
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">ที่อยู่</th>
+                    <th scope="col">ค่าจัดส่ง</th>
+                    <th scope="col">ระยะเวลา</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>กทม.</td>
+                    <td>จัดส่งฟรี</td>
+                    <td>1ชม.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>ปริมณฑล</td>
+                    <td>จัดส่งฟรี</td>
+                    <td>2ชม.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>ต่างจังหวัด</td>
+                    <td>1,500฿</td>
+                    <td>12ชม.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="card" style="width: 18rem;">
+        <img src="https://img5.pic.in.th/file/secure-sv1/U1ntitled-1.jpeg" class="card-img-top" alt="U1ntitled-1.jpeg">
+        <div class="card-body">
+          <p class="card-text">แถมฟรี!!!หญ้าอัลฟาฟ่า-หญ้าทิโมธี สับละเอียด 1กิโลกรัม เน้นยอดใบอ่อน ทานง่าย สำหรับกระต่ายแก่ กระต่ายเด็ก เต่า ชินชิล่า แพรรี่ด็อก</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+  </body>
+</html>
