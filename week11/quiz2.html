@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายชื่อ Staff</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            padding: 20px;
+        }
+        #content {
+            background-color: #ffc8ed;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .person {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .person p {
+            margin: 0;
+            line-height: 1.5;
+        }
+        .person img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+        }
+        #hideButton {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="toggleContent();" id="hideButton">ซ่อนข้อมูล</button>
+    <div id="content" style="display: none;"></div>
+    <script>
+        async function getPeople() {
+            try {
+                let promise = await fetch("https://raw.githubusercontent.com/arc6828/SCS211/main/week13/staff.json");
+                let people_object = await promise.json();
+                console.log("success:", people_object);
+                let people = people_object.people;
+                let contentDiv = document.querySelector("#content");
+                contentDiv.innerHTML = '';
+                for (let item of people) {
+                    console.log(item);
+                    let newDiv = document.createElement("div");
+                    newDiv.classList.add('person');
+                    newDiv.innerHTML = `
+                        <img src="${item.image}" alt="${item.name}'s Image">
+                        <p><strong>Name:</strong> ${item.name}</p>
+                        <p><strong>Education:</strong> ${item.education}</p>
+                        <p><strong>Role:</strong> ${item.role}</p>
+                        <p><strong>Email:</strong> ${item.email}</p>
+                        <p><strong>Phone:</strong> ${item.phone}</p>
+                    `;
+                    contentDiv.appendChild(newDiv);
+                }
+            } catch (error) {
+                console.log("fail", error);
+            }
+        }
+
+        function toggleContent() {
+            let contentDiv = document.querySelector("#content");
+            let hideButton = document.querySelector("#hideButton");
+            if (contentDiv.style.display === "none") {
+                contentDiv.style.display = "block";
+                hideButton.textContent = "ซ่อนข้อมูล";
+                getPeople();
+            } else {
+                contentDiv.style.display = "none";
+                hideButton.textContent = "แสดงรายชื่อ";
+            }
+        }
+    </script>
+</body>
+</html>
