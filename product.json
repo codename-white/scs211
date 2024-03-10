@@ -2,18 +2,22 @@
     "blog": [
         { 
             "image": "https://www.nobicha.co.th/wp-content/uploads/2019/09/taiwan-2-resize-768x857.jpg",
-            "title": "เมนู ชานมไข่มุก มีความสุข ชากระบอก"
-        },
-        
+            "title": "ชานมไข่มุก",
+            "name": "ชานมไต้หวัน",
+            "button": "Learn more"   
+        },        
         { 
             "image": "https://www.nobicha.co.th/wp-content/uploads/2019/09/taiwan-2-resize-768x857.jpg",
-            "title": "เมนู ชานมไข่มุก มีความสุข ชากระบอก"
-        },
+            "title": "ชานมไข่มุก",
+            "name": "ชานมไต้หวัน",
+            "button": "Learn more"   
+        },        
         { 
             "image": "https://www.nobicha.co.th/wp-content/uploads/2019/09/taiwan-2-resize-768x857.jpg",
-            "title": "เมนู ชานมไข่มุก มีความสุข ชากระบอก"
-        }
-
+            "title": "ชานมไข่มุก",
+            "name": "ชานมไต้หวัน",
+            "button": "Learn more"   
+        }      
     ]
 
 }
